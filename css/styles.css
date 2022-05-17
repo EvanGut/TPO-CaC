@@ -1,0 +1,485 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header { 
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+} 
+
+h1 {
+    font-size: 14px;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #67D948;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.nav-logo {
+    padding-top: 15px;
+}
+
+.nav-logo img {
+    animation: bounce .5s ease-in  infinite;
+}
+
+ @keyframes bounce {
+     0% {transform: translateY(-30%);
+    }
+
+    100% {transform: translateY(0%);
+    }
+ }
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #418C0B;
+    padding: 10px 40px;
+    align-items: center;  
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    column-gap: 30px;   
+}
+
+.nav-links li a{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links li a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    width: 100vw;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #67D948;
+}
+
+.footer-icon {
+    padding: 10px;
+}
+
+
+/* Estilos aplicados a index.html */
+.flex-banner {
+    background-image: url(../assets/imágenes/AdobeStock_320891798-scaled.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: auto; 
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner-text {
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+    text-overflow: clip;
+} 
+
+.banner-text h3 {
+    text-align: center;
+} 
+
+#info-adicional {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin: 40px 10px;
+}
+
+.info-card {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    border: .5px solid black;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #e6ffe0;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(7, 216, 42, 0.2);
+}
+.card-img {
+    display: block;
+    margin: auto; 
+    padding: 10px; 
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}  
+
+.btn-card {
+    position:relative;
+}
+
+.btn-card a {
+    display: inline-block;
+    position: absolute;
+    border: 1px solid #1a3c01;
+    border-radius: 5px;
+    padding: 3px;
+    right: 35%;
+    text-decoration: none;
+}
+
+.btn-card a {
+    transform: translate(0px, -5px);
+    box-shadow: 0px 6px 25px 0px rgba(12, 13, 12, 0.7);
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: 800;
+    background-color: #e6ffe0;
+} 
+
+.btn-card a::after {
+    content: "→";
+}
+
+/* Estilos aplicados a adicionales.html - Esta pagina se desprende de index */
+.adicionales p {
+    font-family: 'Raleway', sans-serif; 
+}
+
+.adicionales h2 {
+    font-family: 'Titan One', cursive;
+}
+
+.container-adicionales {
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.adicionales {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 2.5rem;
+    border: 1px solid #1a3c01;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family:'Raleway', sans-serif;
+    line-height: 2rem;
+}
+
+.adicionales h2 {
+    font-size: 25px;
+    font-weight: 800;
+    margin: 0.5rem;
+}
+
+#parrafo2 {
+    scroll-margin-top: 115px;
+}
+
+#parrafo3 {
+    scroll-margin-top: 115px;
+}
+
+#grid-container {
+    padding: 20px;
+    width: 100%;
+    margin: 10px; 
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.grid-item img {
+    width: 90%;
+    height:80%;
+    align-self: center;
+    justify-self: center;
+    border-width: 2px;  
+    border-color: #1a3c01;
+    border-radius: .6rem;
+    border-style: inset none none inset;
+}
+
+.grid-item:hover {
+    transform: scale3d(1.1, 1.1, 1.1); 
+} 
+
+/* Estilos aplicados a tienda.html */
+.store h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0.5rem;
+    font-family:'Raleway', sans-serif;
+    text-align: center;
+}
+
+.store h3 {
+    font-weight: 600;
+    margin: 0.5rem;
+    font-family:'Raleway', sans-serif;
+    text-align: center;
+}
+
+/* Estilos aplicados a contacto.html */
+
+#contact-us {
+    margin: 0;
+    padding: 20px 0px;
+    background-color: rgb(251, 243, 232);
+}
+
+.contact-flex {
+    display: flex;
+    justify-content:center;  
+    align-items: baseline;
+}
+
+.contact-form { 
+    width: 40%;
+    text-align: center; 
+    margin: 0px 10px;
+    padding: 0px 20px;
+}
+
+.input-gap {
+    width: 100%; 
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid black;   
+    border-radius: 6px;
+    font-family:'Titan One', cursive;
+    cursor: pointer;
+    background: #fff;
+}
+
+.input-gap:focus {
+    border: 2px solid #0f7bf7;
+    outline: none;
+}
+
+.contact-form p {
+    text-align: left;
+}
+
+.form-btn {
+    margin-top: 10px;
+    background-color: #418C0B;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-family:'Titan One', cursive;
+}
+
+.form-btn:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.contact-flex h3 {
+    font-size: 2em;
+    font-weight: 600;
+    font-family:'Raleway', sans-serif;
+    margin-bottom: 10px;
+}
+
+.map {
+    margin: 10px; 
+    padding: 0px 20px;
+    width: 40%;
+    text-align: center;
+}
+
+.map > h3 {
+    font-size: 1.8em;
+}
+
+.map > iframe {
+    width: 100%;
+    margin: 20px 0;  
+}
+
+
+/* Media Queries Primer Breakpoint */
+@media only screen and (max-width: 600px) {
+    .contact-flex {
+        flex-direction: column;
+    }
+        
+    .contact-form { 
+        width: 80%;
+        padding: 0px 20px; 
+        text-align: center; 
+        margin-bottom: 40px;
+        align-self: center;
+    }
+
+    .map {
+        width: 80%;
+        padding: 0px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .map h3 {
+        font-size: 1.6em; 
+    }
+    
+    .map > iframe {
+        width: 100%;
+        margin: 20px 0;  
+    }
+}
+    
+
+/* Media Queries Segundo Breakpoint*/
+@media only screen and (min-width: 600px) and (max-width: 790px) {
+    .contact-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .contact-form { 
+       width: 80%; 
+       margin: 0;
+       padding: 0px 20px;
+       max-width: 600px; 
+    }
+    
+    .map {
+        width: 80%;
+        margin-top: 30px; 
+        max-width: 600px;
+    }    
+
+    .map > iframe {
+        width: 100%;
+    }
+
+    .map h3 {
+        font-size: 1.7em; 
+    }  
+}
+
+
+/* Media Queries Tercer Breakpoint*/
+@media only screen and (min-width: 790px) and (max-width: 1200px) {
+    .contact-flex {
+        margin: 30px;
+    }
+    .contact-form { 
+        width: 80%; 
+        margin: 10px;
+     }
+     
+     .map {
+         width: 80%;
+     }    
+ 
+     .map > iframe {
+         width: 100%;
+     }
+
+     .map h3 {
+        font-size: 1.8em; 
+    }  
+}
+
+/* Estilos para mensajes de validación */
+
+/* Imputs con value erroneo */
+.input-gap-incorrecto {
+    width: 100%; 
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #bb2929;
+    border-radius: 6px;
+    font-family:'Titan One', cursive;
+    cursor: pointer;
+    background: #fff;            
+}
+
+/* Imputs con value correcto */
+.input-gap-correcto {
+    width: 100%; 
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #1d9100;
+    border-radius: 6px;
+    font-family:'Titan One', cursive;
+    cursor: pointer;
+    background: #fff;           
+}
+
+
+/* Mensajes de error */
+
+.error-nombre {
+    font-size: 0.9em;
+    display: none; 
+}
+
+
+.error-email {
+    font-size: 0.9em;
+    display: none;
+}
+
+.error-textarea {
+    font-size: 0.9em;
+    display: none;
+}
+
+/* Mensajes de error activos */
+.error-nombre-activo {
+    font-size: 0.9em;
+    display: block; 
+    color: #bb2929;
+}
+
+
+.error-email-activo {
+    font-size: 0.9em;
+    display: block;
+    color: #bb2929;
+}
+
+
+.error-textarea-activo {
+    font-size: 0.9em;
+    display: block; 
+    color: #bb2929;
+}
